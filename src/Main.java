@@ -1,8 +1,16 @@
 public class Main {
-    public static void main(String[] args) {
 
-        //1
-        /* // 1 section one introduction to java
+    public static void main(String[] args) throws InterruptedException {
+
+
+    }
+
+
+}
+
+
+//1
+/* // 1 section one introduction to java
 
         System.out.println("hello World");
         System.out.print("welcome kasem \n ");
@@ -11,8 +19,8 @@ public class Main {
         System.out.println();
 
         */
-        //2
-        /* // 2 section two variables
+//2
+/* // 2 section two variables
 
         //primitive variable
 
@@ -44,8 +52,8 @@ public class Main {
                 + "and gender is " + gender + ","
                 + "and you are admin " + isAdmin);
         */
-        //3
-        /*  // 3 section three  user input
+//3
+/*  // 3 section three  user input
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Your Name: ");
@@ -77,8 +85,8 @@ public class Main {
         scanner.close();
 
         */
-        //4
-        /* // 4 section four  mad libs game
+//4
+/* // 4 section four  mad libs game
         Scanner scanner = new Scanner(System.in);
         String adjective1;
         String noun1;
@@ -103,8 +111,8 @@ public class Main {
         System.out.println("I was " + adjective3 + "!");
         scanner.close();
         */
-        //5
-        /* // 5 section five  arithmetic operations
+//5
+/* // 5 section five  arithmetic operations
 
         int x =10;
         int y = 5;
@@ -118,8 +126,8 @@ public class Main {
         x+=y;
         System.out.println(x);
          */
-        //6
-        /* // 6 section six   shopping cart program
+//6
+/* // 6 section six   shopping cart program
 
         Scanner scanner = new Scanner(System.in);
         String item;
@@ -138,8 +146,8 @@ public class Main {
         scanner.close();
 
          */
-        //7
-        /* // 7 section seven   if statements
+//7
+/* // 7 section seven   if statements
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your Age: ");
         if (scanner.hasNextInt()) {
@@ -159,8 +167,8 @@ public class Main {
         scanner.close();
 
          */
-        //8
-        /* // 8 section eight  random numbers
+//8
+/* // 8 section eight  random numbers
         Random random = new Random();
 
         int num;
@@ -177,8 +185,8 @@ public class Main {
             System.out.println("body");
         }
          */
-        //9
-        /* // 9 section nine  math class
+//9
+/* // 9 section nine  math class
         System.out.println(Math.PI);
         System.out.println(Math.E);
 
@@ -233,8 +241,8 @@ public class Main {
         System.out.printf("the volum is : %.1f\n", volum);
         scanner.close();
          */
-        //10
-        /* // 10 section ten   printf
+//10
+/* // 10 section ten   printf
 
                 //string >>> %s
         //char >>> %c
@@ -257,8 +265,8 @@ public class Main {
         System.out.printf("%s is %d years old \n",name,age);
 
          */
-        //11
-        /* // 11 section eleven   compound interest calculator
+//11
+/* // 11 section eleven   compound interest calculator
 
         Scanner scanner = new Scanner(System.in);
         double principal;
@@ -283,8 +291,8 @@ public class Main {
         scanner.close();
 
          */
-        //12
-        /* // 12 nested if statements
+//12
+/* // 12 nested if statements
                 boolean isStudent = true;
         boolean isSenior = false;
         double price = 9.99;
@@ -308,8 +316,8 @@ public class Main {
         System.out.printf("the price of ticket is : $%.2f \n", price);
 
          */
-        //13
-        /* // 13 string methods
+//13
+/* // 13 string methods
         String name = "kasem safwat  ";
 
         int length = name.length(); //get length
@@ -337,8 +345,8 @@ public class Main {
 
         }
          */
-        //14
-        /* // 14 substrings
+//14
+/* // 14 substrings
 
 //        String email = "kasemsafwat.96@gmail.com";
 //        String firstName = email.substring(0, 5);
@@ -371,8 +379,8 @@ public class Main {
         scanner.close();
 
          */
-        //15
-        /* // 15 weight converter
+//15
+/* // 15 weight converter
 
         double kilo;
         double lbs;
@@ -408,8 +416,8 @@ public class Main {
         scanner.close();
 
          */
-        //16
-        /* // 16 ternary operator
+//16
+/* // 16 ternary operator
 
         int score = 5;
 
@@ -424,8 +432,8 @@ public class Main {
         String evenOrOdd = (score % 2 == 0) ? "even" : "odd";
         System.out.println(evenOrOdd);
          */
-        //17
-        /* // 17 temperature converter
+//17
+/* // 17 temperature converter
 
                double temp;
         double result;
@@ -447,278 +455,832 @@ public class Main {
         scanner.close();
 
          */
-        //18
-        /* // 18 enhanced switches
+//18
+/* // 18 enhanced switches
 
-         */
+        //        String day;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter Day To Check : ");
+//        day = scanner.next();
+//        switch (day) {
+//            case "Saturday", "Friday" -> System.out.printf("%s this day is weekend \n", day);
+//            case "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday" ->
+//                    System.out.printf("%s this day is week day \n", day);
+//            default -> System.out.printf("%s invalid day \n", day);
+//
+//        }
+//        scanner.close();
+        //---------------------------
 
+//        String day;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter Day To Check : ");
+//        day = scanner.next();
+//        switch (day) {
+//            case "Saturday", "Friday", "Thursday", "Wednesday", "Tuesday", "Monday", "Sunday":
+//                System.out.printf("%s this day is week day \n", day);
+//                break;
+//            default:
+//                System.out.printf("%s invalid day \n", day);
+//
+//        }
+//        scanner.close();
 
-        //19
-        /* // 19 calculator program
-
-         */
-        //20
-        /* // 20 logical operators
-
-         */
-        //21
-        /* // 21 while loops ♾️
-
-
-         */
-        //22
-        /* // 22 ⭐ number guessing game 🔢
-
-
-         */
-        //23
-        /* // 23 for loops 🔂
-
-
-         */
-        //24
-        /* // 24 break & continue 🚦
-
-
-         */
-        //25
-        /* // 25 nested loops ➿
-
-
-         */
-        //26
-        /* // 26 methods 📞
-
-
-         */
-        //27
-        /* // 27 overloaded methods 🍕
-
-
-         */
-        //28
-        /* // 28 variable scope 🏠
-
-
-         */
-        //29
-        /* // 29 ⭐ banking program 💰
-
-
-         */
-        //30
-        /* // 30 ⭐ dice roller program 🎲
-
-
-         */
-        //31
-        /* // 31 arrays 🍎
+        //---------------------------
+//
+//        String day;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter Day To Check : ");
+//        day = scanner.next();
+//        switch (day) {
+//            case "Saturday":
+//                System.out.printf("%s this day is week day \n", day);
+//                break;
+//            case "Sunday":
+//                System.out.printf("%s this day is week day \n", day);
+//                break;
+//            case "Monday":
+//                System.out.printf("%s this day is week day \n", day);
+//                break;
+//            case "Tuesday":
+//                System.out.printf("%s this day is week day \n", day);
+//                break;
+//            case "Wednesday":
+//                System.out.printf("%s this day is week day \n", day);
+//                break;
+//            case "Thursday":
+//                System.out.printf("%s this day is week day \n", day);
+//                break;
+//            case "Friday":
+//                System.out.printf("%s this day is week day \n", day);
+//                break;
+//            default:
+//                System.out.printf("%s invalid day \n", day);
+//
+//        }
+//        scanner.close();
 
 
          */
-        //32
-        /* // 32 enter user input into an array ➡️
+//19
+/* // 19 calculator program
+                double firstNum;
+        double secondNum;
+        char operator;
+        double result = 0;
+        boolean validateOperator = true;
 
+        Scanner scanner = new Scanner(System.in);
 
-         */
-        //33
-        /* // 33 search an array 🔎
+        System.out.print("Enter The First Number : ");
+        firstNum = scanner.nextDouble();
 
+        System.out.print("Enter an Operator (+, -, *, ^): ");
+        operator = scanner.next().charAt(0);
 
-         */
-        //34
-        /* // 34 varargs 💬
+        System.out.print("Enter The Second Number : ");
+        secondNum = scanner.nextDouble();
 
+        switch (operator) {
+            case '+' -> result = firstNum + secondNum;
+            case '-' -> result = firstNum - secondNum;
+            case '*' -> result = firstNum * secondNum;
+            case '/' -> {
+                if (secondNum == 0) {
+                    System.out.println("cannot divide by zero!");
+                    validateOperator = false;
+                } else {
+                    result = firstNum / secondNum;
+                }
+            }
+            case '^' -> result = Math.pow(firstNum, secondNum);
+            default -> {
+                System.out.println("Invalid Operator");
+                validateOperator = false;
+            }
+        }
 
-         */
-        //35
-        /* // 35 2d arrays ⬜
+        if (validateOperator) {
+            System.out.printf("result : %.2f \n", result);
+        }
+        scanner.close();
 
-
-         */
-        //36
-        /* // 36 ⭐ quiz game 💯
-
-
-         */
-        //37
-        /* // 37 ⭐ rock paper scissors 🗿
-
-
-         */
-        //38
-        /* // 38 ⭐ slot machine 🎰
-
-
-         */
-        //39
-        /* // 39 object-oriented programming 🧱
-
-
-         */
-        //40
-        /* // 40 constructors 🔨
-
-
-         */
-        //41
-        /* // 41 overloaded constructors 🛠️
 
 
          */
-        //42
-        /* // 42 array of objects 🗃️
+//20
+/* // 20 logical operators
+        && and
+        || or
+        ! not
+        == if equal
+
+         */
+//21
+/* // 21 while loops
+//        String name = "";
+//        Scanner scanner = new Scanner(System.in);
+//        while (name.isEmpty()) {
+//            System.out.print("Enter Your Name : ");
+//            name = scanner.nextLine();
+//        }
+//        System.out.println("Hello " + name);
+//        scanner.close();
+
+//        String input = "";
+//        Scanner scanner = new Scanner(System.in);
+//        while (!input.contains("q")) {
+//            System.out.println("You are Playing a game");
+//            System.out.print("Press Q to quit : ");
+//            input = scanner.next();
+//        }
+//        System.out.println("you have quit the game");
+//        scanner.close();
+//        int age = 0;
+//        Scanner scanner = new Scanner(System.in);
+//
+//        do {
+//            System.out.println("Age can't be negative or zero!");
+//            System.out.print("Enter Your Age : ");
+//            age = scanner.nextInt();
+//        } while (age <= 0);
+//        System.out.println("Your Age is " + age + " Years Old");
+//        scanner.close();
+
+         */
+//22
+/* // 22 ⭐ number guessing game 🔢
+
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+
+        int guess;
+        int attempts = 0;
+        int min = 1;
+        int max = 100;
+        int randomNumber = random.nextInt(min, max);
+
+        System.out.println("Number Guessing Game");
+        System.out.printf("Guess a number between %d - %d \n", min, max);
+        do {
+            System.out.print("Enter a guess : ");
+            guess = scanner.nextInt();
+            attempts++;
+
+            if (guess < randomNumber) {
+                System.out.println("Too LOW! Try again");
+            } else if (guess > randomNumber) {
+                System.out.println("TOO HIGH! Try again");
+            } else {
+                System.out.println("CORRECT! The number was " + randomNumber);
+                System.out.println("# of attempts: " + attempts);
+            }
+        } while (guess != randomNumber);
+
+        System.out.println("You have Won");
+
+        scanner.close();
+
+         */
+//23
+/* // 23 for loops 🔂
+//        int num;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter number of height of permed : ");
+//        num = scanner.nextInt();
+//        for (int i = 0; i <= num; i++) {
+//            for (int space = 1; space <= num - i; space++) {
+//                System.out.print(" ");
+//            }
+//            for (int star = 1; star <= (2 * i - 1); star++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//
+//        for (int i = 0; i <= num; i++) {
+//
+//            for (int j = 1; j <= i; j++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//
+//        for (int i = 1; i <= num; i++) {
+//            System.out.println(i);
+//            Thread.sleep(1000); //make output sleep one second
+//        }
+//
+//        scanner.close();
+
 
 
          */
-        //43
-        /* // 43 static 🤝
-
-
-         */
-        //44
-        /* // 44 inheritance 👨‍👧‍👦
-
-
-         */
-        //45
-        /* // 45 super 🔝
-
+//24
+/* // 24 break & continue 🚦
+        for (int i = 0; i <= 10; i++) {
+            if (i == 3) {
+                continue;
+            }
+            if (i == 8) {
+                break;
+            }
+            System.out.print(i + "    ");
+        }
 
          */
-        //46
-        /* // 46 method overriding ♻️
-
-
-         */
-        //47
-        /* // 47 tostring method 🎉
-
-
-         */
-        //48
-        /* // 48 abstraction 🌫️
-
-
-         */
-        //49
-        /* // 49 interfaces 📋
-
-
-         */
-        //50
-        /* // 50 polymorphism 🎭
-
-
-         */
-        //51
-        /* // 51 runtime polymorphism 🤷‍♂️
-
-
-         */
-        //52
-        /* // 52 getters and setters 🔐
-
+//25
+/* // 25 nested loops ➿
+//
+//        for (int i = 0; i <= 3; i++) {
+//            for (int j = 0; j <= 10; j++) {
+//                System.out.print(j + " ");
+//
+//            }
+//            System.out.println();
+//        }
+//        Scanner scanner = new Scanner(System.in);
+//        int col;
+//        int row;
+//        char symbol;
+//
+//        System.out.print("enter number of column : ");
+//        col = scanner.nextInt();
+//        System.out.print("enter number of row : ");
+//        row = scanner.nextInt();
+//        System.out.print("enter a symbol : ");
+//        symbol = scanner.next().charAt(0);
+//        for (int i = 0; i < row; i++) {
+//            for (int j = 0; j < col; j++) {
+//                System.out.print(symbol + " ");
+//            }
+//            System.out.println();
+//        }
+//
+//
+//        scanner.close();
 
          */
-        //53
-        /* // 53 aggregation 🏫
+//26
+/* // 26 methods
+
+//inide main
+        String name = "kasem";
+        happyBirthDay(name);
+
+        double result = square(5);
+
+        System.out.println(result);
+
+        System.out.println(cube(5));
 
 
-         */
-        //54
-        /* // 54 composition ⚙️
+        fullName("kasem", "safwat");
 
+        String fulname = getName("kasem", "safwat");
 
-         */
-        //55
-        /* // 55 wrapper classes 🎁
+        System.out.println(fulname);
 
+//outside main
+    static void happyBirthDay(String name) throws InterruptedException {
+        for (int i = 0; i <= 5; i++) {
+            System.out.printf("happy birthday %s\n", name);
+            if (i == 10) {
+                System.out.println("-----");
+            }
+            Thread.sleep(500);
+        }
+    }
 
-         */
-        //56
-        /* // 56 arraylists 📃
-
-
-         */
-        //57
-        /* // 57 exception handling ⚠️
-
-
-         */
-        //58
-        /* // 58 write files ✍
-
-
-         */
-        //59
-        /* // 59 read files 📖
-
-
-         */
-        //60
-        /* // 60 ⭐ music player 🎼
-
-
-         */
-        //61
-        /* // 61 ⭐ hangman game 🕺
-
-
-         */
-        //62
-        /* // 62 dates & times 📆
-
-
-         */
-        //63
-        /* // 63 anonymous classes 🕵️‍♂️
-
-
-         */
-        //64
-        /* // 64 timertasks ⏲️
-
-
-         */
-        //65
-        /* // 65 ⭐ countdown timer ⏳
-
-
-         */
-        //66
-        /* // 66 generics 📦
-
-
-         */
-        //67
-        /* // 67 hashmaps 🗺️
-
-
-         */
-        //68
-        /* // 68 enums 📅
-
-
-         */
-        //69
-        /* // 69 threading 🧵
-
-
-         */
-        //70
-        /* // 70 multithreading 🧶
-
-
-         */
-        //71
-        /* // 71 ⭐ alarm clock ⏰
-
-
-         */
-
-        // edit for new push
-        // in backend learning D:\web fullstack\Courses\New Courses 2025\backendtamer\Week 4\session1
+    static double square(double num) {
+        return num * num;
 
     }
-}
+
+    static double cube(double num) {
+        return num * num * num;
+    }
+
+    static void fullName(String fname, String lname) {
+        System.out.printf("full name is %s %s\n", fname, lname);
+    }
+
+    static String getName(String fn, String ln) {
+        return fn + " " + ln;
+    }
+
+ */
+//27
+/* // 27 overloaded methods 🍕
+//inside main
+        System.out.println(add(5, 5));
+        System.out.println(add(5, 5, 5));
+        System.out.println(add(10.0, 10));
+
+        //outside main
+
+    static double add(double x, double y) {
+        return x + y;
+    }
+
+    static double add(double x, double y, double z) {
+        return x + y + z;
+    }
+
+    static int add(int x, int y) {
+        return x + y;
+    }
+
+ */
+//28
+/* // 28 variable scope 🏠
+
+
+//local scobe
+// global scobe
+
+ */
+//29
+/* // 29 ⭐ banking program
+
+//outside main
+static Scanner scanner = new Scanner(System.in);
+    static void showBalance(double balance) {
+        System.out.println("****************");
+        System.out.println();
+        System.out.printf("your balance is : $%.2f \n\n", balance);
+    }
+
+    static double deposit() {
+        double amount;
+        System.out.println();
+        System.out.print("Enter an amount to be deposited : ");
+        amount = scanner.nextDouble();
+
+        if (amount < 0) {
+            System.out.println("****************");
+            System.out.println();
+            System.out.println("amount can't be negative\n");
+            return 0;
+        } else {
+            showBalance(amount);
+            return amount;
+        }
+
+    }
+
+    static double withdraw(double balance) {
+
+        double amount;
+        System.out.println();
+        System.out.print("Enter amount to be withdraw : ");
+        amount = scanner.nextDouble();
+        if (amount > balance) {
+            System.out.println("****************");
+            System.out.println();
+            System.out.println("amount must be less than balance!\n");
+            return 0;
+        } else if (amount < 0) {
+            System.out.println("****************");
+            System.out.println();
+            System.out.println("amount can't be negative!\n");
+            return 0;
+        } else {
+            showBalance(amount);
+            return amount;
+        }
+
+    }
+
+    //inside main
+            double balance = 0;
+        boolean isRunning = true;
+        int choice;
+        while (isRunning) {
+            System.out.println("****************");
+            System.out.println("Banking Program");
+            System.out.println("****************");
+            System.out.println("1 : show Balance ");
+            System.out.println("2 : Deposit ");
+            System.out.println("3 : Withdraw ");
+            System.out.println("4 : Exit ");
+            System.out.println("****************");
+
+            System.out.print("Enter your choice ( 1 - 4 ) : ");
+            choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1 -> showBalance(balance);
+                case 2 -> balance += deposit();
+                case 3 -> balance -= withdraw(balance);
+                case 4 -> isRunning = false;
+                default -> System.out.println("invalid choices!");
+            }
+            System.out.println("**********************");
+            System.out.println("thank you for our bank");
+            System.out.println("**********************");
+        }
+        scanner.close();
+
+ */
+//30
+/* // 30 ⭐ dice roller program 🎲
+
+//outside main
+    static void printDice(int roll) {
+        String dice1 = """
+                 -------
+                |       |
+                |   ●   |
+                |       |
+                 -------
+                """;
+        String dice2 = """
+                 -------
+                | ●     |
+                |       |
+                |     ● |
+                 -------
+                """;
+        String dice3 = """
+                 -------
+                | ●     |
+                |   ●   |
+                |     ● |
+                 -------
+                """;
+        String dice4 = """
+                 -------
+                | ●   ● |
+                |       |
+                | ●   ● |
+                 -------
+                """;
+        String dice5 = """
+                 -------
+                | ●   ● |
+                |   ●   |
+                | ●   ● |
+                 -------
+                """;
+        String dice6 = """
+                 -------
+                | ●   ● |
+                | ●   ● |
+                | ●   ● |
+                 -------
+                """;
+
+        switch (roll) {
+            case 1 -> System.out.println(dice1);
+            case 2 -> System.out.println(dice2);
+            case 3 -> System.out.println(dice3);
+            case 4 -> System.out.println(dice4);
+            case 5 -> System.out.println(dice5);
+            case 6 -> System.out.println(dice6);
+            default -> System.out.println("Invalid rolling!");
+        }
+
+    }
+//inside main
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        int numDice;
+        int total = 0;
+
+        System.out.print("Enter The Number of Dice to Roll: ");
+        numDice = scanner.nextInt();
+
+        if (numDice > 0) {
+            for (int i = 0; i < numDice; i++) {
+                int roll = random.nextInt(1, 7);
+                printDice(roll);
+                System.out.println("you rolled: " + roll);
+                total += roll;
+            }
+            System.out.println("Total: " + total);
+        } else {
+            System.out.println("number of dice can't be negative!");
+        }
+
+        scanner.close();
+
+ */
+//31
+/* // 31 arrays
+        String[] names = {"kasem", "mohamed", "ahmed", "omar"};
+
+
+        System.out.println(names[0]);
+
+        System.out.println("------------");
+
+        names[0] = "ismaeel";
+        System.out.println(names[0]);
+
+        System.out.println("------------");
+
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i] + " ");
+
+        }
+        System.out.println("------------");
+
+        int numOfName = names.length;
+        System.out.println(numOfName);
+
+
+        Arrays.sort(names);
+
+
+//        Arrays.fill(names, "Kasem");
+
+        System.out.println("------------");
+
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        System.out.println("------------");
+
+
+ */
+//32
+/* // 32 enter user input into an array ➡️
+
+
+ */
+
+
+//33
+/* // 33 search an array 🔎
+
+
+ */
+
+
+//34
+/* // 34 varargs 💬
+
+
+ */
+
+
+//35
+/* // 35 2d arrays ⬜
+
+
+ */
+
+
+//36
+/* // 36 ⭐ quiz game 💯
+
+
+ */
+
+
+//37
+/* // 37 ⭐ rock paper scissors 🗿
+
+
+ */
+
+
+//38
+/* // 38 ⭐ slot machine 🎰
+
+
+ */
+
+
+//39
+/* // 39 object-oriented programming 🧱
+
+
+ */
+
+
+//40
+/* // 40 constructors 🔨
+
+
+ */
+
+
+//41
+/* // 41 overloaded constructors 🛠️
+
+
+ */
+
+
+//42
+/* // 42 array of objects 🗃️
+
+
+ */
+
+
+//43
+/* // 43 static 🤝
+
+
+ */
+
+
+//44
+/* // 44 inheritance 👨‍👧‍👦
+
+
+ */
+
+
+//45
+/* // 45 super 🔝
+
+
+ */
+
+
+//46
+/* // 46 method overriding ♻️
+
+
+ */
+
+
+//47
+/* // 47 tostring method 🎉
+
+
+ */
+
+
+//48
+/* // 48 abstraction 🌫️
+
+
+ */
+
+
+//49
+/* // 49 interfaces 📋
+
+
+ */
+
+
+//50
+/* // 50 polymorphism 🎭
+
+
+ */
+
+
+//51
+/* // 51 runtime polymorphism 🤷‍♂️
+
+
+ */
+
+
+//52
+/* // 52 getters and setters 🔐
+
+
+ */
+
+
+//53
+/* // 53 aggregation 🏫
+
+
+ */
+
+
+//54
+/* // 54 composition ⚙️
+
+
+ */
+
+
+//55
+/* // 55 wrapper classes 🎁
+
+
+ */
+
+
+//56
+/* // 56 arraylists 📃
+
+
+ */
+
+
+//57
+/* // 57 exception handling ⚠️
+
+
+ */
+
+
+//58
+/* // 58 write files ✍
+
+
+ */
+
+
+//59
+/* // 59 read files 📖
+
+
+ */
+
+
+//60
+/* // 60 ⭐ music player 🎼
+
+
+ */
+
+
+//61
+/* // 61 ⭐ hangman game 🕺
+
+
+ */
+
+
+//62
+/* // 62 dates & times 📆
+
+
+ */
+
+
+//63
+/* // 63 anonymous classes 🕵️‍♂️
+
+
+ */
+
+
+//64
+/* // 64 timertasks ⏲️
+
+
+ */
+
+
+//65
+/* // 65 ⭐ countdown timer ⏳
+
+
+ */
+
+
+//66
+/* // 66 generics 📦
+
+
+ */
+
+
+//67
+/* // 67 hashmaps 🗺️
+
+
+ */
+
+
+//68
+/* // 68 enums 📅
+
+
+ */
+
+
+//69
+/* // 69 threading 🧵
+
+
+ */
+
+
+//70
+/* // 70 multithreading 🧶
+
+
+ */
+
+
+//71
+/* // 71        ⭐ alarm clock ⏰
+
+
+ */
+
