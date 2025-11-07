@@ -1007,34 +1007,201 @@ static Scanner scanner = new Scanner(System.in);
  */
 //32
 /* // 32 enter user input into an array ➡️
+        Scanner scanner = new Scanner(System.in);
 
+        int num = 0;
+
+        System.out.print("Enter the number of fruits : ");
+        num = scanner.nextInt();
+        scanner.nextLine();
+
+        String[] fruits = new String[num];
+
+        if (num == 0 || num < 0) {
+            System.out.println("you not want any fruits!");
+        } else {
+
+            for (int i = 0; i < fruits.length; i++) {
+                System.out.print("Enter name of fruit : ");
+                fruits[i] = scanner.nextLine();
+            }
+            System.out.print("you want " + num + " fruits: ");
+            for (String fruit : fruits) {
+                System.out.print(fruit + " ");
+            }
+            System.out.println();
+
+
+        }
+
+        scanner.close();
+
+
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        int size = 0;
+        System.out.print("Enter Number of foods: ");
+        size = scanner.nextInt();
+        scanner.nextLine();
+        String[] foods = new String[size];
+
+
+        if (size == 0 || size < 0) {
+            System.out.println("you not want any food!");
+        } else {
+            for (int i = 0; i < foods.length; i++) {
+                System.out.print("Enter food name: ");
+                foods[i] = scanner.nextLine();
+            }
+
+            System.out.print("your list item is : ");
+            for (String item : foods) {
+                System.out.print(item + " ");
+            }
+
+        }
+
+
+        scanner.close();
 
  */
-
-
 //33
 /* // 33 search an array 🔎
+        Scanner scanner = new Scanner(System.in);
+
+        String input;
+        boolean find = false;
+        String[] students = {"mohamed", "kasem", "Ahmed", "Sara", "Omar", "Laila"};
+
+        System.out.print("Enter student name you want to find: ");
+        input = scanner.nextLine();
+
+
+        for (String student : students) {
+            if (input.equals(student)) {
+                find = true;
+                break;
+            }
+        }
+        if (find) {
+            System.out.printf("Yes, the student named %s is found.\n", input);
+        } else {
+            System.out.printf("Sorry, the student named %s is not found.\n", input);
+        }
+
+
+        scanner.close();
+
 
 
  */
-
-
 //34
 /* // 34 varargs 💬
+//inside main
 
 
+        int result = add(1, 2, 3, 4, 5, 6, 7);
+
+        System.out.println("result : " + result);
+
+        double ava = average(1, 2, 3);
+
+        System.out.println("average: " + ava);
+
+//outside main
+
+
+    static int add(int... numbers) {
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        return sum;
+    }
+
+    static double average(double... numbers) {
+
+        double average = 0;
+        double sum = 0;
+
+        if (numbers.length == 0) return 0;
+
+        for (double number : numbers) {
+            sum += number;
+        }
+        average = sum / (numbers.length);
+
+        return average;
+    }
  */
-
-
 //35
 /* // 35 2d arrays ⬜
 
+        String[] fruits = {"appel", "orange", "banana", "strawberry"};
+        String[] vegetables = {"potato", "onion", "carrot", "tomato"};
+        String[] meats = {"beef", "chicken", "fish"};
 
+        String[][] groceries = {fruits, vegetables, meats};
+
+        //String[row][col] = {{},{},{}}
+        for (String[] foods : groceries) {
+            for (String food : foods) {
+                System.out.print(food + " ");
+            }
+            System.out.println();
+        }
  */
-
-
 //36
 /* // 36 ⭐ quiz game 💯
+
+        String[] Question = {"What is the main function of a router?",
+                "which part of the computer is considered the brain?",
+                "what year was Facebook launched?",
+                "who is know as the father of computer?",
+                "what was the first programing language? "};
+
+        String[][] options = {{"1. Storing file", "2. Encryption data", "3. Directing internet traffic", "4. Managing password"},
+                {"1. CPU", "2. Hard Drive", "3. RAM", "4. GPU"},
+                {"1. 2000", "2. 2004", "3. 2006", "4. 2008"},
+                {"1. Steve jobs", "2. Bill gates", "3. Alan turing", "4. Charles Babbage"},
+                {"1. Cobol", "2. C", "3. Fortran", "4. Assembly"}};
+
+        int[] answer = {3, 1, 2, 4, 3};
+        int score = 0;
+        int guess;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("*********************************************");
+        System.out.println("wellcome to the java Quiz Game !");
+        System.out.println("*********************************************");
+        for (int i = 0; i < Question.length; i++) {
+            System.out.println(Question[i]);
+            for (String option : options[i]) {
+                System.out.println(option);
+            }
+            System.out.print("Enter your Guess : ");
+            guess = scanner.nextInt();
+            if (guess == answer[i]) {
+                System.out.println("**********");
+                System.out.println("Correct!");
+                System.out.println("**********");
+                score++;
+            } else {
+                System.out.println("**********");
+                System.out.println("Wrong!");
+                System.out.println("**********");
+            }
+        }
+
+        System.out.println("*********************************************");
+        System.out.println("your Score is : " + score + " out of " + Question.length);
+        System.out.println("*********************************************");
+
+
+        scanner.close();
 
 
  */
